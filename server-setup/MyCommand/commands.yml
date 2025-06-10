@@ -1,0 +1,16 @@
+pay:
+  command: /pay
+  type: RUN_COMMAND
+  runcmd:
+  - '$script$checkargs'
+  - '$script$payplayer'
+
+scripts:
+  checkargs:
+  - "$ArgCount < 2 ? message &cUso: /pay <jugador> <cantidad>"
+  payplayer:
+  - "$PlayerPoints.HasPoints <player> %arg2% ? noperm &cNo tienes suficientes DomusCoins."
+  - "$PlayerPoints.Take <player> %arg2%"
+  - "$PlayerPoints.Give %arg1% %arg2%"
+  - "tell &7Le enviaste &6\u26C3 &5%arg2% &7a &e%arg1%."
+  - "tell %arg1% &7Recibiste &6\u26C3 &5%arg2% &7de &e<player>."
