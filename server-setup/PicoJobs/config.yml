@@ -1,0 +1,5 @@
+# Configuración de PicoJobs para usar DomusCoin a través de PlayerPoints
+settings:
+  economy: playerpoints
+  currency-symbol: "\u26C3"
+  currency-color: "&5"

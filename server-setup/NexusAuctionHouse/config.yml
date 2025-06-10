@@ -1,0 +1,6 @@
+# Configuración para NexusAuctionHouse 2.0.1 con DomusCoin
+settings:
+  economy:
+    plugin: vault
+    currency-symbol: "\u26C3"
+    currency-color: "&5"

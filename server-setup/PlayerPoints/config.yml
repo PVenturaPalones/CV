@@ -1,0 +1,11 @@
+# Configuración de PlayerPoints 3.3.2 para DomusCoin
+points:
+  singular: "DomusCoin"
+  plural: "DomusCoins"
+  symbol: "\u26C3" # Símbolo ⛃
+  color: "&5"
+vault:
+  enabled: true
+  currency-name-singular: "DomusCoin"
+  currency-name-plural: "DomusCoins"
+  currency-symbol: "\u26C3"
